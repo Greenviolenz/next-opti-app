@@ -1,0 +1,86 @@
+import React from 'react'
+import { SvgProps } from '../models/Svg'
+
+const IconFlag = ({ height, width, className = 'text-black' }: SvgProps) => (
+  <svg
+    height={height}
+    width={width}
+    className={className}
+    viewBox="0 0 676.07 494.68"
+    y="0"
+    x="0"
+  >
+    <rect
+      id="rect583"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#ffffff"
+      height="494.53"
+      width="676.07"
+      y=".15218"
+      x="0"
+    />
+    <rect
+      id="rect561"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#d72828"
+      height="189.23"
+      width="186.74"
+      y="2.4898"
+      x=".44008"
+    />
+    <rect
+      id="rect562"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#d72828"
+      height="189.02"
+      width="368.03"
+      y="2.6924"
+      x="306.69"
+    />
+    <rect
+      id="rect563"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#d72828"
+      height="183.89"
+      width="183.89"
+      y="309.18"
+      x=".44008"
+    />
+    <rect
+      id="rect564"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#d72828"
+      height="181.85"
+      width="365.54"
+      y="311.22"
+      x="309.18"
+    />
+    <rect
+      id="rect565"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#003897"
+      height="493.08"
+      width="62.245"
+      y="0"
+      x="217.05"
+    />
+    <rect
+      id="rect566"
+      fillRule="evenodd"
+      strokeWidth="1pt"
+      fill="#003897"
+      height="61.298"
+      width="674.28"
+      y="217.23"
+      x=".44009"
+    />
+  </svg>
+)
+
+export default IconFlag
