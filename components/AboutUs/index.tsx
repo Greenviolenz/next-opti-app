@@ -14,7 +14,7 @@ const AboutUs = () => (
         Om Optipharma
       </Header>
 
-      <div className="flex gap-x-4 flex-col md:flex-row gap-y-4 max-w-5xl self-center">
+      <div className="flex gap-x-4 flex-col md:flex-row gap-y-4 md:gap-y-6 max-w-5xl self-center">
         <Text className="text-white flex-1">
           Optipharma ble etablert i 2010 og har siden den gang utviklet flere
           anerkjente produkter innen helsekost. Vi er en nøytral
