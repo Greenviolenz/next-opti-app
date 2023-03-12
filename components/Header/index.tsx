@@ -32,7 +32,6 @@ const Header = ({
   return (
     <Tag
       className={clsx(
-        'text-h1',
         tagClass[level],
         weightClass[weight],
         primary && 'text-primary',
