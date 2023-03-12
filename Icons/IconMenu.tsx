@@ -1,5 +1,5 @@
 import React from 'react'
-import { SvgProps } from '../models/Svg'
+import { SvgProps } from '@models/Svg'
 
 const IconMenu = ({
   height = '24',

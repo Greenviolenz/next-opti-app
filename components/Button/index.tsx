@@ -1,15 +1,16 @@
-import { ReactNode } from 'react'
+import { HTMLProps, ReactNode } from 'react'
+import clsx from 'clsx'
 
-type Props = {
+type Props = HTMLProps<HTMLButtonElement> & {
   children: ReactNode
-  onClick?: (e: React.MouseEvent<HTMLElement>) => void
+  // onClick?: (e: React.MouseEvent<HTMLElement>) => void
 }
 
-const Button = ({ children, onClick }: Props) => (
+const Button = ({ children, className, ...restProps }: Props) => (
   <button
+    {...restProps}
     type="button"
-    className="bg-transparent p-0 border-none"
-    onClick={onClick}
+    className={clsx(['bg-transparent p-0 border-none', className])}
   >
     {children}
   </button>

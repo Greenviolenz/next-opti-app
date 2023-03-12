@@ -5,7 +5,7 @@ import Overlay from './Overlay'
 
 const HomePage = () => (
   <PageLayout image={background} id="hjem">
-    <Header primary className="pt-4 pl-16">
+    <Header primary className="pt-4 pl-16 hidden md:block">
       Optipharma
     </Header>
 

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#647E71',
+        primaryLight: '#869E91',
         secondary: '#D9D9D9',
         border: '#707070',
       },
@@ -29,6 +30,9 @@ module.exports = {
           '0%': { transform: 'translateX(100vw)' },
           '100%': { transform: 'translateX(0vw)' },
         },
+      },
+      screens: {
+        mobile: '860px',
       },
     },
   },

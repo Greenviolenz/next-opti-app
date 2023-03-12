@@ -2,6 +2,7 @@ import clsx from 'clsx'
 
 type Props = {
   variant?: 'body1' | 'body2' | 'caption'
+  weight?: 'normal' | 'bold'
   className?: string
   children: React.ReactNode
 }
@@ -12,8 +13,25 @@ const variantClass = {
   caption: 'text-caption',
 }
 
-const Text = ({ variant = 'body1', className, children }: Props) => (
-  <p className={clsx('whitespace-pre-wrap', variantClass[variant], className)}>
+const weightClass = {
+  normal: 'font-[300]',
+  bold: 'font-[500]',
+}
+
+const Text = ({
+  variant = 'body1',
+  className,
+  children,
+  weight = 'normal',
+}: Props) => (
+  <p
+    className={clsx(
+      'whitespace-pre-wrap',
+      variantClass[variant],
+      weightClass[weight],
+      className
+    )}
+  >
     {children}
   </p>
 )

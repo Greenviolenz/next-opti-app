@@ -8,7 +8,7 @@ import GridItem from './GridItem'
 const ContactUs = () => (
   <PageLayout
     id="kontakt"
-    className="bg-primary"
+    className="bg-primary md:p-6"
     wrapperClass="justify-center min-h-screen items-center"
   >
     <RevealWrapper

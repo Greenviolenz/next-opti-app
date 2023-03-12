@@ -12,7 +12,7 @@ const AboutUs = () => (
     >
       <Header className="text-white">Om Optipharma</Header>
 
-      <div className="flex gap-4 max-w-5xl self-center">
+      <div className="flex gap-x-4 gap-y-4 max-w-5xl flex-wrap self-center">
         <Text className="text-white">
           Optipharma ble etablert i 2010 og har siden den gang utviklet flere
           anerkjente produkter innen helsekost. Vi er en nøytral
@@ -24,7 +24,7 @@ const AboutUs = () => (
           utvikle de beste produktene med tanke.
         </Text>
 
-        <Text className="text-white">
+        {/* <Text className="text-white">
           Optipharma ble etablert i 2010 og har siden den gang utviklet flere
           anerkjente produkter innen helsekost. Vi er en nøytral
           kontraktsprodusent og har derfor ikke egne varemerker. Etter 24 års
@@ -33,7 +33,7 @@ const AboutUs = () => (
           utvikler og produserer næringsmidler og kosttilskudd for norske
           bedrifter. Vi ønsker å hjelpe våre kunder med deres ideer for å
           utvikle de beste produktene med tanke.
-        </Text>
+        </Text> */}
       </div>
     </RevealWrapper>
   </PageLayout>
