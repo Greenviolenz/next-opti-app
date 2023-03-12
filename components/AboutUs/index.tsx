@@ -4,7 +4,12 @@ import Text from '@components/Text'
 import { RevealWrapper } from 'next-reveal'
 
 const AboutUs = () => (
-  <PageLayout id="omoss" image="/pillsHand.png" imageOverlay className="flex">
+  <PageLayout
+    id="omoss"
+    image="/pillsHand-min.png"
+    imageOverlay
+    className="flex"
+  >
     <RevealWrapper
       origin="bottom"
       className="flex flex-col gap-16 text-center self-center w-full"

@@ -12,6 +12,7 @@ const MobileServiceSection = ({ service }: Props) => (
     {service.subcategories.map((category) => (
       <RevealWrapper
         key={category.title}
+        delay={0}
         origin="bottom"
         className="w-full bg-white bg-opacity-90 rounded-2xl p-6 flex flex-col gap-4"
       >

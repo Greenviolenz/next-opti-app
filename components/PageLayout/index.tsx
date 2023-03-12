@@ -44,7 +44,7 @@ const PageLayout = ({
       <div className="bg-primary absolute inset-0 bg-opacity-90" />
     )}
 
-    <div className={clsx('p-4 flex w-full', image && 'relative', wrapperClass)}>
+    <div className={clsx('p-6 flex w-full', image && 'relative', wrapperClass)}>
       {children}
     </div>
   </div>

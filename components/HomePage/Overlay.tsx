@@ -28,7 +28,7 @@ const Overlay = () => (
             arrows={false}
             canSwipe={false}
             autoplay
-            duration={2000}
+            duration={1500}
             transitionDuration={600}
             easing="ease"
           >
