@@ -5,6 +5,7 @@ import Services from '@components/Services'
 import ContactUs from '@components/ContactUs'
 import SideNav from '@components/SideNav'
 import Cartoon from '@components/Cartoon'
+import ScrollDown from '@components/ScrollDown'
 
 const montserrat = Montserrat({
   subsets: ['cyrillic-ext'],
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <ContactUs />
+      {/* <ScrollDown /> */}
     </main>
   )
 }
