@@ -7,7 +7,8 @@
     "start": "yarn dev",
     "build": "next build",
     "preview": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@types/node": "^18.13.0",
