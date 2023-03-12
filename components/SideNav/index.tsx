@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Button from '../Button'
 import clsx from 'clsx'
-import logo from 'public/logosmall2.png'
-import Image from 'next/image'
 import IconMenu from 'Icons/IconMenu'
 import IconX from 'Icons/IconX'
 import Link from 'next/link'
@@ -65,7 +63,7 @@ const SideNav = () => {
             onClick={handleClose}
             scroll={false}
           >
-            <Image src={logo} alt="logo" sizes="40px" width={40} />
+            <img src="/logosmall2.png" alt="logo" sizes="40px" width={40} />
           </Link>
 
           {menuIconVisible ? (

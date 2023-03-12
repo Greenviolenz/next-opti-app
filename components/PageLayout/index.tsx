@@ -1,9 +1,9 @@
 import clsx from 'clsx'
-import Image, { StaticImageData } from 'next/image'
+// import Image, { StaticImageData } from 'next/image'
 import { ReactNode } from 'react'
 
 type Props = {
-  image?: string | StaticImageData
+  image?: string
   imageOverlay?: boolean
   id?: string
   className?: string
@@ -28,13 +28,13 @@ const PageLayout = ({
     id={id}
   >
     {image && (
-      <Image
+      <img
         src={image}
         alt="Bagrunnsbilde"
-        fill
-        priority
-        quality={80}
-        className="object-cover z-0 pointer-events-none"
+        // fill
+        // priority
+        // quality={80}
+        className="object-cover z-0 pointer-events-none absolute w-screen h-screen"
         sizes="1500px"
         placeholder="blur"
       />

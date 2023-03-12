@@ -2,7 +2,6 @@ import Header from '@components/Header'
 import Text from '@components/Text'
 import { Service } from '@models/Category'
 import { RevealWrapper } from 'next-reveal'
-import Image from 'next/image'
 
 type Props = { service: Service }
 
@@ -23,7 +22,7 @@ const MobileServiceSection = ({ service }: Props) => (
         <Text className="">{category.content}</Text>
 
         <div className="w-[200px] h-[200px] rounded-full overflow-hidden self-center">
-          <Image
+          <img
             alt="kategori-bilde"
             src={category.image}
             sizes="200px"

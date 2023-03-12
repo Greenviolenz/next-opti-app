@@ -5,7 +5,6 @@ import { Service } from '@models/Category'
 import clsx from 'clsx'
 import { useIsMobile } from 'hooks/useIsMobile'
 import { RevealWrapper } from 'next-reveal'
-import Image from 'next/image'
 import { useState } from 'react'
 import MobileServiceSection from './MobileServiceSection'
 import ServiceNav from './ServiceNav'
@@ -38,7 +37,7 @@ const ServiceSection = ({ service }: Props) => {
     <PageLayout
       className={clsx(['flex', bgColor])}
       id={service.title.toLowerCase()}
-      wrapperClass="justify-center py-6"
+      wrapperClass="justify-center py-6 overflow-y-hidden"
     >
       <RevealWrapper
         origin="bottom"
@@ -57,7 +56,7 @@ const ServiceSection = ({ service }: Props) => {
           className={clsx(['flex w-full gap-4', isEven && 'flex-row-reverse'])}
         >
           <div className="w-[300px] h-[300px] rounded-full overflow-hidden z-10">
-            <Image
+            <img
               alt="kategori-bilde"
               src={selectedCategory.image}
               sizes="300px"
