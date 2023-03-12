@@ -11,21 +11,6 @@ const SideNav = () => {
   const [menuIconVisible, setMenuIconVisible] = useState(true)
   const wrapperRef = useRef(null)
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    // first prevent the default behavior
-    e.preventDefault()
-    // get the href and remove everything before the hash (#)
-    const href = e.currentTarget.href
-    const targetId = href.replace(/.*\#/, '')
-    // get the element by id and use scrollIntoView
-    const elem = document.getElementById(targetId)
-    elem?.scrollIntoView({
-      behavior: 'smooth',
-    })
-
-    handleClose()
-  }
-
   useEffect(() => {
     /**
      * Close if clicked outside of nav
@@ -75,7 +60,7 @@ const SideNav = () => {
           <Link
             className="z-30"
             href="/#hjem"
-            onClick={handleScroll}
+            onClick={handleClose}
             scroll={false}
           >
             <img src="/logosmall2.png" alt="logo" sizes="40px" width={40} />
@@ -112,7 +97,7 @@ const SideNav = () => {
             <Link
               className="nav-item"
               href="/#omoss"
-              onClick={handleScroll}
+              onClick={handleClose}
               scroll={false}
             >
               <Text variant="caption">Om oss</Text>
@@ -120,7 +105,7 @@ const SideNav = () => {
             <Link
               className="nav-item"
               href="/#produktutvikling"
-              onClick={handleScroll}
+              onClick={handleClose}
               scroll={false}
             >
               <Text variant="caption">Produktutvikling</Text>
@@ -128,7 +113,7 @@ const SideNav = () => {
             <Link
               className="nav-item"
               href="/#produktgrupper"
-              onClick={handleScroll}
+              onClick={handleClose}
               scroll={false}
             >
               <Text variant="caption">Produktgrupper</Text>
@@ -136,7 +121,7 @@ const SideNav = () => {
             <Link
               className="nav-item"
               href="/#forpakning"
-              onClick={handleScroll}
+              onClick={handleClose}
               scroll={false}
             >
               <Text variant="caption">Forpakning</Text>
@@ -144,7 +129,7 @@ const SideNav = () => {
             <Link
               className="nav-item"
               href="/#kontakt"
-              onClick={handleScroll}
+              onClick={handleClose}
               scroll={false}
             >
               <Text variant="caption">Kontakt</Text>
