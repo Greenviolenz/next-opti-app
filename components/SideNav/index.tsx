@@ -3,8 +3,8 @@ import Button from '../Button'
 import clsx from 'clsx'
 import IconMenu from 'Icons/IconMenu'
 import IconX from 'Icons/IconX'
-import Link from 'next/link'
 import Text from '@components/Text'
+import ScrollLink from '@components/ScrollLink'
 
 const SideNav = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -52,19 +52,19 @@ const SideNav = () => {
     <>
       <div
         className={clsx([
-          'fixed z-10 bg-white rounded-br-lg',
+          'fixed z-10 bg-white md:rounded-br-lg maxmd:rounded-bl-lg maxmd:right-0',
           !menuIconVisible && 'shadow-md',
         ])}
       >
         <div className="flex flex-col items-center gap-4 p-2 border-br-lg">
-          <Link
+          <ScrollLink
             className="z-30"
             href="/#hjem"
             onClick={handleClose}
-            scroll={false}
+            onClickEvent={handleClose}
           >
             <img src="/logosmall2.png" alt="logo" sizes="40px" width={40} />
-          </Link>
+          </ScrollLink>
 
           {menuIconVisible ? (
             <Button onClick={handleOpen}>
@@ -82,58 +82,53 @@ const SideNav = () => {
 
       <nav
         className={clsx([
-          'fixed h-screen transition-all z-20 overflow-hidden shadow-md	bg-white',
+          'fixed h-screen transition-all z-20 overflow-hidden shadow-md	bg-white maxmd:right-0',
           menuOpen ? 'w-[270px]' : 'w-0',
         ])}
         ref={wrapperRef}
       >
         <div className="relative flex flex-col">
-          <div className="absolute top-2 right-2">
+          <div className="absolute top-2 md:right-2 maxmd:left-2">
             <Button onClick={handleClose} aria-label="">
               <IconX aria-label="close nav" />
             </Button>
           </div>
           <div className="flex flex-col items-center gap-8 mt-20">
-            <Link
+            <ScrollLink
               className="nav-item"
               href="/#omoss"
-              onClick={handleClose}
-              scroll={false}
+              onClickEvent={handleClose}
             >
               <Text variant="caption">Om oss</Text>
-            </Link>
-            <Link
+            </ScrollLink>
+            <ScrollLink
               className="nav-item"
               href="/#produktutvikling"
-              onClick={handleClose}
-              scroll={false}
+              onClickEvent={handleClose}
             >
               <Text variant="caption">Produktutvikling</Text>
-            </Link>
-            <Link
+            </ScrollLink>
+            <ScrollLink
               className="nav-item"
               href="/#produktgrupper"
-              onClick={handleClose}
-              scroll={false}
+              onClickEvent={handleClose}
             >
               <Text variant="caption">Produktgrupper</Text>
-            </Link>
-            <Link
+            </ScrollLink>
+            <ScrollLink
               className="nav-item"
               href="/#forpakning"
-              onClick={handleClose}
-              scroll={false}
+              onClickEvent={handleClose}
             >
               <Text variant="caption">Forpakning</Text>
-            </Link>
-            <Link
+            </ScrollLink>
+            <ScrollLink
               className="nav-item"
               href="/#kontakt"
-              onClick={handleClose}
-              scroll={false}
+              onClickEvent={handleClose}
             >
               <Text variant="caption">Kontakt</Text>
-            </Link>
+            </ScrollLink>
           </div>
         </div>
       </nav>

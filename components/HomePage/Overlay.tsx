@@ -11,7 +11,7 @@ const Overlay = () => (
   <div className="absolute h-screen w-full md:w-[500px] bg-primary right-0 top-0 overflow-hidden md:animate-slidein bg-opacity-90">
     <div className="flex flex-col justify-between h-full gap-6 p-8">
       <div className="flex flex-col gap-6">
-        <Header level="1" className="text-white pl-10 md:hidden">
+        <Header level="1" className="text-white md:hidden">
           Optipharma
         </Header>
 
